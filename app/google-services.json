@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "984801431965",
+    "project_id": "proyecto-412",
+    "storage_bucket": "proyecto-412.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984801431965:android:adb0b356b1471aa6c45f74",
+        "android_client_info": {
+          "package_name": "com.mariotorrese.proyecto_412"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984801431965-tlc16k4hslnpicmlsqekr8k16k8d1hi4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA87qQ_Ee96Ukt-XkMw25WHe4Iw7MtIHh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984801431965-tlc16k4hslnpicmlsqekr8k16k8d1hi4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
