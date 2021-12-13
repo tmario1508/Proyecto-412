@@ -3,28 +3,4 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/login_fragment"
-        android:name="com.mariotorrese.proyecto_412.fragments.LoginFragment"
-        android:layout_width="314dp"
-        android:layout_height="586dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
-
-    </androidx.fragment.app.FragmentContainerView>
-
-    <TextView
-        android:id="@+id/txtUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="74dp"
-        android:text="Login"
-        app:layout_constraintEnd_toStartOf="@+id/login_fragment"
-        tools:layout_editor_absoluteY="147dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:layout_height="match_parent"/>

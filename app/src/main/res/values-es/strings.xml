@@ -4,4 +4,20 @@
     <string name="txt_usuario">Nombre de Usuario</string>
     <string name="txt_pass">Contraseña</string>
     <string name="title_login">Sistema de asistencia</string>
+    <string name="detail_name">Nombre</string>
+    <string name="detail_id">Matricula</string>
+    <string name="detail_especiality">Especialidad</string>
+    <string name="detail_group">Grupo</string>
+
+    <string name="main_alumnos">Lista de Estudiantes</string>
+    <string name="main_asistencia">Asistencia</string>
+    <string name="main_salir">Salir</string>
+
+    <string name="email">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="forgotPassword">Olvidaste tu contraseña?</string>
+    <string name="firstName">Nombre</string>
+    <string name="lastName">Apellido</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="createAct">Crear cuenta</string>
 </resources>

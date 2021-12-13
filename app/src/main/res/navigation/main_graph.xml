@@ -3,16 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/alumnosFragment">
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.mariotorrese.proyecto_412.fragments.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
-        <action
-            android:id="@+id/action_loginFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
-    </fragment>
+    app:startDestination="@id/firebaseLoginFragment">
     <fragment
         android:id="@+id/alumnosFragment"
         android:name="com.mariotorrese.proyecto_412.ui.alumnos.AlumnosFragment"
@@ -60,10 +51,25 @@
         <action
             android:id="@+id/action_mainFragment_to_asistenciaFragment"
             app:destination="@id/asistenciaFragment" />
+        <argument
+            android:name="user"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_mainFragment_to_firebaseLoginFragment"
+            app:destination="@id/firebaseLoginFragment" />
     </fragment>
     <fragment
         android:id="@+id/asistenciaFragment"
         android:name="com.mariotorrese.proyecto_412.ui.asistencia.AsistenciaFragment"
         android:label="fragment_asistencia"
         tools:layout="@layout/fragment_asistencia" />
+    <fragment
+        android:id="@+id/firebaseLoginFragment"
+        android:name="com.mariotorrese.proyecto_412.ui.login.FirebaseLoginFragment"
+        android:label="fragment_firebase_login"
+        tools:layout="@layout/fragment_firebase_login" >
+        <action
+            android:id="@+id/action_firebaseLoginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
 </navigation>
