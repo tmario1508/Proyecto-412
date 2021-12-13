@@ -22,8 +22,9 @@
         android:id="@+id/txtUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="176dp"
+        android:layout_marginEnd="74dp"
+        android:text="Login"
+        app:layout_constraintEnd_toStartOf="@+id/login_fragment"
         tools:layout_editor_absoluteY="147dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

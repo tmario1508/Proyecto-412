@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="cona">#007e67</color>
+    <color name="azul_med">#0066FF</color>
+    <color name="rosa_eje">#FF5AC8</color>
+    <color name="eje_seg">#6580A4</color>
+    <color name="eje_hum">#00A985</color>
+
 </resources>
