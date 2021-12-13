@@ -9,9 +9,11 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.mariotorrese.proyecto_412.R
 import com.mariotorrese.proyecto_412.core.Resource
+import com.mariotorrese.proyecto_412.data.model.Alumno
 import com.mariotorrese.proyecto_412.data.remote.AlumnoDataSource
 import com.mariotorrese.proyecto_412.data.remote.ApiClient
 import com.mariotorrese.proyecto_412.databinding.FragmentAlumnosBinding
@@ -35,7 +37,7 @@ class AlumnosFragment : Fragment(R.layout.fragment_alumnos) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentAlumnosBinding.bind(view)
 
-        binding.recyclerAlumno.layoutManager = GridLayoutManager(requireContext(), 2)
+        binding.recyclerAlumno.layoutManager = GridLayoutManager(requireContext(), 1)
 
         viewModel.fetchAlumnos().observe(viewLifecycleOwner, Observer { result ->
             when(result) {
@@ -45,7 +47,7 @@ class AlumnosFragment : Fragment(R.layout.fragment_alumnos) {
                 is Resource.Success -> {
                     binding.progressbar.visibility = View.GONE
                     adapter = AlumnoAdapter(result.data.data) { alumno ->
-                        Toast.makeText(this.context, alumno.img, Toast.LENGTH_SHORT).show()
+                        onAlumnoClick(alumno)
                     }
 
                     binding.recyclerAlumno.adapter = adapter
@@ -57,5 +59,18 @@ class AlumnosFragment : Fragment(R.layout.fragment_alumnos) {
                 }
             }
         })
+    }
+
+    private fun onAlumnoClick(alumno: Alumno) {
+        val action = AlumnosFragmentDirections.actionAlumnosFragmentToDeatilAlumnoFragment2(
+            alumno.nombre,
+            alumno.apellidop,
+            alumno.apellidom,
+            alumno.matricula,
+            alumno.grupo,
+            alumno.img,
+            alumno.especialidad
+        )
+        findNavController().navigate(action)
     }
 }

@@ -26,7 +26,29 @@
         android:id="@+id/deatilAlumnoFragment"
         android:name="com.mariotorrese.proyecto_412.ui.alumnos.DeatilAlumnoFragment"
         android:label="fragment_deatil_alumno"
-        tools:layout="@layout/fragment_deatil_alumno" />
+        tools:layout="@layout/fragment_deatil_alumno" >
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <argument
+            android:name="apellidop"
+            app:argType="string" />
+        <argument
+            android:name="apellidom"
+            app:argType="string" />
+        <argument
+            android:name="matricula"
+            app:argType="string" />
+        <argument
+            android:name="grupo"
+            app:argType="string" />
+        <argument
+            android:name="img"
+            app:argType="string" />
+        <argument
+            android:name="especialidad"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.mariotorrese.proyecto_412.ui.login.MainFragment"
